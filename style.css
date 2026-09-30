@@ -1,137 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Method Consultancy</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
- 
-<body>
- 
-<header>
-<div class="container">
-<h1>The Method Consultancy</h1>
-<p class="tagline">
-Helping AdTech organisations turn potential into performance
-</p>
- 
-<a href="mailto:hello@themethodconsultancy.co.uk" class="button">
-Start a Conversation
-</a>
-</div>
-</header>
- 
-<section class="hero">
-<div class="container">
- 
-<h2>
-Strategy is easy. Execution is harder.
-</h2>
- 
-<p>
-Method helps AdTech, media and marketing organisations unlock
-performance through AI adoption, organisational effectiveness
-and operational excellence.
-</p>
- 
-<p>
-We work with leaders who know where they want to go but need
-practical support turning ambition into measurable results.
-</p>
- 
-</div>
-</section>
- 
-<section>
-<div class="container">
- 
-<h2>What We Do</h2>
- 
-<div class="cards">
- 
-<div class="card">
-<h3>AI Adoption & Transformation</h3>
- 
-<p>
-Turning AI potential into measurable business outcomes.
-</p>
-</div>
- 
-<div class="card">
-<h3>Organisational Effectiveness</h3>
- 
-<p>
-Aligning teams, operating models and accountability for
-sustainable performance.
-</p>
-</div>
- 
-<div class="card">
-<h3>Operational Excellence</h3>
- 
-<p>
-Improving governance, scalability and commercial performance.
-</p>
-</div>
- 
-</div>
- 
-</div>
-</section>
- 
-<section class="about">
- 
-<div class="container">
- 
-<h2>About Fiona Tate</h2>
- 
-<p>
-Fiona Tate is a transformation leader with more than 20 years'
-experience helping AdTech, media and technology businesses
-improve performance, scale effectively and realise the value of
-technology investments.
-</p>
- 
-<p>
-Most recently Fiona served as Global SVP Operational Excellence
-at WPP Media, leading global transformation, operational
-excellence, governance and AI adoption initiatives across more
-than 40,000 practitioners in over 80 markets.
-</p>
- 
-</div>
- 
-</section>
- 
-<section class="contact">
- 
-<div class="container">
- 
-<h2>Let's Talk</h2>
- 
-<p>
-If you're navigating growth, transformation or AI adoption,
-I'd love to hear from you.
-</p>
- 
-<p>
-<a href="mailto:hello@themethodconsultancy.co.uk">
-hello@themethodconsultancy.co.uk
-</a>
-</p>
- 
-</div>
- 
-</section>
- 
-<footer>
- 
-<div class="container">
- 
-© 2026 The Method Consultancy
- 
-</div>
+/* Reset margins and set base font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* Container keeps content centered and prevents it from stretching too wide */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography styling for an elegant look */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #111827; /* Dark slate for headings */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: #4b5563; /* Softer gray for easy reading */
+}
+
+/* Header styling */
+header {
+  background-color: #f9fafb;
+  padding: 5rem 0 4rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+}
+
+/* Button styling */
+.button {
+  display: inline-block;
+  background-color: #0f172a; /* Professional dark navy/slate */
+  color: #ffffff;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #334155;
+}
+
+/* General section spacing */
+section {
+  padding: 5rem 0;
+}
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cards Layout - Makes the 3 services sit side-by-side on large screens */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect when hovering */
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* About Section */
+.about {
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: #0f172a;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+}
